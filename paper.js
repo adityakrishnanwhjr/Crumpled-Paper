@@ -10,7 +10,7 @@ class Paper{
         this.x=x;
         this.y=y;
         this.r=r;
-        this.body=Bodies.circle(this.x,this.y,this.r,options);
+        this.body=Bodies.circle(this.x,this.y,(this.r-20)/2,options);
         this.image=loadImage("paper.png");
         World.add(world,this.body);
     }
@@ -20,7 +20,7 @@ class Paper{
         push();
         translate(paperPos.x,paperPos.y);
         imageMode()
-        image(this.image,0,0,this.r);
+        image(this.image,0,-105,this.r);
         pop();
     }
 }
