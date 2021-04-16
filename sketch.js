@@ -31,8 +31,8 @@ function draw() {
   background(230);
 
   groundObject.display();
-  dustbinObj.display();
   crumpledPaper.display();
+  dustbinObj.display();
 
 }
 
